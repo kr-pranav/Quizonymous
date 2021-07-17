@@ -1,0 +1,106 @@
+<!doctype html>
+<html>  
+    <head>
+        <title>QUIZZER</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Online quizzing site">
+        <meta name="keywords" content="quiz,tech quiz"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="HomePage.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="icon" href="./images/icon.jpg" type="image/icon">
+    </head>   
+    <body>
+    <div class=container-fluid>
+        <div style="background-image:url(./images/bg.png); height: 100vh; background-repeat: no-repeat ; background-size: cover ;" >
+            <!-- Navigation bar -->
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" > 
+                <!--dropdown menu-->
+                <div class="btn-group">
+                    <button class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Domains</button>
+                
+                    <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 38px, 0px)">
+                        <a href="SelectQuizDomain.php" class="dropdown-item">DSA</a>
+                        <a href="SelectQuizDomain.php" class="dropdown-item">DBMS</a>
+                        <a href="SelectQuizDomain.php" class="dropdown-item">OS</a>
+                        <a href="SelectQuizDomain.php" class="dropdown-item">Aptitude</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="UserProfile.php" class="dropdown-item"><img src="./images/profile.png" width="20" height="20"  alt="" style="margin-right: 7%;" >Profile</a>
+                    </div>
+                </div>
+                
+                <p style="font-family: Georgia ; font-weight: bolder; margin-top: 1%;  margin-left:2%; font-size: 30px; color: whitesmoke">QUIZONYMOUS</p>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">  
+                <ul class="navbar-nav float-sm-right">
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-weight: bolder; margin-top: 1%; color: whitesmoke" href="SelectResultDomain.php">Leaderboard</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Login.php" class="btn-outline-primary" style="font-weight: bolder; margin-top: 1%; color: whitesmoke">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Signup.php" class="btn-outline-primary" style="font-weight: bolder; margin-top: 1%; color: whitesmoke">Sign up</a>
+                    </li>
+                </ul>
+              </div>
+            </nav>
+
+            <!--to give about information-->
+            <div class="clearfix mt-sm-5 ">
+                <span class="float-sm-left w-25 ml-sm-5 mt-sm-5" style=" color: whitesmoke; font-size: 200%;  ">
+                    <br><h1 style='font-family: monospace'>About:</h1><br> We provide a great platform for the upliftment of your technical skills.
+                    We render question sets of industry standard to enhance your employability skills.
+                    Try to solve our questions and fly out with successful colors in your life.<br></span>
+            </div>
+
+            <!--start button -->
+            <div class="container">
+                <a href="SelectQuizDomain.php" class="glow btn btn-lg float-sm-left " style="color: whitesmoke; font-size: 250%;">Start Quizzing</a>
+
+            </div>
+            <br>
+
+            <!-- footer -->
+            <div class="footer-clean" style="margin-top: 5%;">
+                <footer>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-sm-4 col-md-3 item">
+                                <h3>Services</h3>
+                                <ul>
+                                    <li><a href="#">Web library</a></li>
+                                    <li><a href="#">Books</a></li>
+                                    <li><a href="#">Online materials</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4 col-md-3 item">
+                                <h3>About</h3>
+                                <ul>
+                                    <li><a href="#">Company</a></li>
+                                    <li><a href="#">Contact us</a></li>
+                                    <li><a href="#">Read more</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+                                <p class="copyright">Quizonymous © 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>   
+    </body>
+</html>
